@@ -35,7 +35,7 @@ Synopsis
    }
 ```
 
-	1. create thrift lua cilet (thrift 0.9.3) 
+	1. create thrift lua client (thrift 0.9.3) 
 	   :> thrift gen -lua tets.thrift
 	2. >cp gen-lua/*_Service.lua /${openresty.path}/lualib/resty/thrift/thrift-idl/  (*_Service.lua test.thrift `service TestService {}`)
 	3. :> cp gen-lua/*_ttypes.lua /${openresty.path}/lualib/resty/thrift/thrift-idl/
