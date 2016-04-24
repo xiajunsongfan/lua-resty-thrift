@@ -5,6 +5,7 @@ lua-resty-thrift - Lua thrift client driver for the ngx_lua based on the cosocke
 Synopsis
 ===
 
+*nginx.conf:*  
 ```lua
 
    server {
@@ -24,6 +25,7 @@ Synopsis
    
 ```
 
+*thrift:*
 ```thrift
    namespace java com.test.thrift
    namespace lua lua_test
@@ -32,6 +34,7 @@ Synopsis
       string say(1:string request)
    }
 ```
+
 	1. create thrift lua cilet (thrift 0.9.3) 
 	   :> thrift gen -lua tets.thrift
 	2. >cp gen-lua/*_Service.lua /${openresty.path}/lualib/resty/thrift/thrift-idl/  (*_Service.lua test.thrift `service TestService {}`)
