@@ -40,7 +40,7 @@ Synopsis
 	2. create thrift lua client (thrift 0.9.3) 
 	   用thrift命令生成thrift客户端
 	   :> thrift gen -lua tets.thrift
-	3. 将生成的文件拷贝openresty安装目录下的lualib/resty/thrift/thrift-idl/目录，thrift目录自己创建
+	3. 将生成的文件拷贝openresty安装目录下的lualib/resty/thrift/thrift-idl/目录
 	   :>cp gen-lua/*_Service.lua /${openresty.path}/lualib/resty/thrift/thrift-idl/
 	4. :> cp gen-lua/*_ttypes.lua /${openresty.path}/lualib/resty/thrift/thrift-idl/
 	5. Replace *_Service.lua *_Service.lua `require`
